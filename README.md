@@ -6,10 +6,17 @@ To read the given data and perform Feature Transformation process and save the d
 Feature Transformation is a technique by which we can boost our model performance. Feature transformation is a mathematical transformation in which we apply a mathematical formula to a particular column(feature) and transform the values which are useful for our further analysis.
 
 ## Algorithm:
-Step1: Read the given Data.
-Step2: Clean the Data Set using Data Cleaning Process.
-Step3: Apply Feature Transformation techniques to all the features of the data set.
-Step4: Print the transformed features.
+* Step1: Read the given Data.
+* Step2: Clean the Data Set using Data Cleaning Process.
+* Step3: Apply Feature Transformation techniques to all the features of the data set.
+* Step4: Print the transformed features.
+
+## Program:
+
+```
+Developed By: ASWINTH T
+Register number: 212222230015
+```
 
 ## Importing libraries and reading csv file:
 ```
@@ -26,11 +33,13 @@ df=pd.read_csv("Data_to_Transform.csv")
 ### Basic Information:
 ```
 df.head()
-df.info()
 ```
-![277878594-01c70133-1ac6-4ae9-b95d-dfead150c640](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/05d09d18-0377-4fc3-a1ec-f2aba6b026d7)
-![2](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/28cdf8ed-f71b-44dd-ba4b-3cade6b97a43)
-![3](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/d23977ae-d7ff-4b55-bb0a-585ba3f36e4c)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/892bf390-9c21-470d-be34-99a8995f6534)
+```
+df.info()
+df.describe()
+```
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/4163412f-c649-4d22-9399-58b3993f739e)
 
 ### Before Transformation:
 ```
@@ -50,10 +59,10 @@ sm.qqplot(df['Moderate Negative Skew'],fit=True,line='45')
 plt.title("Moderate Negative Skew")
 plt.show()
 ```
-![1](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/a4631303-b3a7-47bf-b098-385b929911b9)
-![2](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/20052fa4-fc16-41db-8f94-a5b8221e04f1)
-![3](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/4d1384ce-e56d-4e9d-8807-9ba176815b7e)
-![4](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/e5159da8-caa5-435b-b717-7de5adbcf543)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/57c88c2a-e369-4582-937b-f463f069eaa3)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/a0584aab-07be-49e7-aa19-9069a0e1b2a4)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/36007502-e942-45ac-b0a4-6fbc2105b482)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/28135fee-5170-49d4-bebd-e0f8d15b2f28)
 
 
 
@@ -69,8 +78,9 @@ sm.qqplot(df['Moderate Positive Skew'],fit=True,line='45')
 plt.title("Moderate Positive Skew")
 plt.show()
 ```
-![1](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/7dcfe11a-f40d-424c-b321-b41a4cbea327)
-![2](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/1c2d4ba3-632a-4849-b2da-612ecc9c6d88)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/e7576d57-3471-4273-86b2-57c272de5b50)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/727438e2-b812-491a-97ad-5b200ed952ea)
+
 
 
 ### Reciprocal Transformation:
@@ -80,7 +90,7 @@ sm.qqplot(df['Highly Positive Skew'],fit=True,line='45')
 plt.title("Highly Positive Skew")
 plt.show()
 ```
-![3](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/65574444-c672-40bb-a799-56b7345240be)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/f79305c0-2c41-48fd-842c-5d15c572dc65)
 
 ### SquareRoot Transformation:
 ```
@@ -89,7 +99,7 @@ sm.qqplot(df['Highly Positive Skew'],fit=True,line='45')
 plt.title("Highly Positive Skew")
 plt.show()
 ```
-![4](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/4f4ab4d0-7e70-43ba-aef9-9c5c6cac3092)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/edc6de10-88e0-4997-a8fa-ef9dd403c6ee)
 
 ### Power Transformation:
 ```
@@ -104,8 +114,8 @@ sm.qqplot(df['ModerateNegativeSkew_2'],fit=True,line='45')
 plt.title("Moderate Negative Skew")
 plt.show()
 ```
-![5](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/69fce838-4d21-41f6-9fa9-8f259beafc65)
-![6](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/7a12c932-2cc5-4e6e-8aef-747fd7f3c810)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/5ecedf87-1a54-422c-a33c-4c3a4627d4f0)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/684c3da7-1761-4744-86fa-bb2075834bb7)
 
 
 ### Quantile Transormation:
@@ -116,7 +126,7 @@ sm.qqplot(df['ModerateNegativeSkew_2'],fit=True,line='45')
 plt.title("Moderate  Negative Skew")
 plt.show()
 ```
-![7](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex06/assets/119393540/aba8ff31-0f6c-4e88-a510-6433c1ca94f1)
+![image](https://github.com/Aswinth21/ODD2023-Datascience-Ex06/assets/120236638/2beb4850-180f-4c66-8b4b-e1836296c8a9)
 
 
 
